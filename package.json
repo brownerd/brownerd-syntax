@@ -1,0 +1,11 @@
+{
+  "name": "brownerd-syntax ",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Minimal syntax",
+  "repository": "https://github.com/atom/brownerd-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
