@@ -1,9 +1,6 @@
 # Brownerd Syntax
 
-This is a minimal syntax that uses typography instead of coloring.
-
-*- This is a fork of [Seti syntax](https://github.com/jesseweed/seti-syntax).*
-*- This is a light syntax theme for Atom*
+This is a minimal syntax that uses typographic weight instead of coloring.
 
 ## Dependencies
 
