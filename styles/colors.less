@@ -1,21 +1,11 @@
 // These colors are specific to the theme. Do not use in a package!
 
-@very-light-gray: #c5c8c6;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
 
-@cyan: #8abeb7;
-@blue: #81a2be;
-@purple: #b294bb;
-@green: #b5bd68;
-@red: #cc6666;
-@orange: #de935f;
-@light-orange: #f0c674;
-
+// COLORS
 
 /*
+Less color functions:
+
 lighten(@color, 20%)
 darken(@color, 20%)
 saturate()
@@ -33,9 +23,8 @@ mix(@blue, @yellow, 50%)
 @charcoal: #333;
 @graphite: #ccc;
 @silver: #f5f5f5;
-@cloud: #e8e8e8;
 @chocolate: #534741;
-@dirt: #998675;
+@zdirt: #998675;
 @dust: #e8e8e2;
 
 // Colors from http://clrs.cc/
@@ -45,7 +34,7 @@ mix(@blue, @yellow, 50%)
 @teal: #39CCCC;
 @olive: #3D9970;
 @green: #2ECC40;
-@lime: #01FF70;  // 0FA - wintermint
+@slime: #01FF70;  // 0FA - wintermint
 @yellow: #FFDC00;
 @orange: #FF851B;
 @red: #FF4136;
@@ -53,7 +42,10 @@ mix(@blue, @yellow, 50%)
 @fuchsia: #F012BE;
 @purple: #B10DC9;
 @wintermint: #0FA;
-@atermellon: ;
+
+
+@master-accent: @yellow;
+
 
 // Font weights for 'Source Code Pro'
 @extra-light: 200;
@@ -63,3 +55,62 @@ mix(@blue, @yellow, 50%)
 @semi-bold: 600;
 @bold: 700;
 @ultra-bold: 900;
+
+// GUTTER
+@gutter-text: @charcoal;
+@gutter-text-highlight: @entity;
+@gutter-background: @silver;
+@gutter-background-highlight: @master-accent;
+
+// CODE VIEW
+@code-background: @silver; // editor background
+@code-font: 'Source Code Pro';
+@code-font-color: @charcoal; // default editor text
+
+// SYNTAX COLORS
+@comment: @graphite; // comments, duhr.
+@comment-bg: none; // comments, duhr.
+@comment-punc: @comment;
+@string: @charcoal; // 'value' of var='value', "name.png" or src="name.png"
+@constant: @charcoal; // true of var x = true, {{}} of {{> hbs_include}}
+@variable: @charcoal; // foo or function(foo), hbs_include of {{> hbs_include}}, http://dom.com/ of url(http://dom.com/)
+@support: @charcoal; // module of module.exports, color of color: rgb(0,0,0)
+@entity: @charcoal; // exports of module.exports, <div id= of <div id="#id">, . of .className
+@keyword: @charcoal; // @green; // = of var a = b, if of if a = b, px of font-size: 13px;
+@storage: @charcoal; // "var" "function";
+@meta: @code-font-color; // none of border: none;
+@function-param: @charcoal;
+
+@error: @red;
+
+@regex: @string;
+
+@numeric: @charcoal;
+@quotes: @code-font-color;
+
+@markup: @code-font-color;
+@unknown: @code-font-color;
+
+// MISC COLORS
+@invisible: @fuchsia;
+@guides: @graphite;
+@cursor-color: @code-font-color;
+@cursor-width: 1px;
+@selected: @master-accent; // selected background color
+@selected-line: @master-accent;
+
+@tag: @class;
+@tag-entity: @charcoal;
+@element-attr: @charcoal;
+@class: @charcoal;
+@id: @charcoal;
+
+@entity-function: @charcoal;
+@brackets: @charcoal;
+@punctuation: @charcoal;
+
+@search-bg: transparent;
+@search-border: solid 1px @red;
+
+@search-active-bg: @master-accent;
+@search-active-border: solid 1px @red;
